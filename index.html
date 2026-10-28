@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midn1ghtlab - Old Layout for YouTube</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #0f0f0f;
+            color: #f1f1f1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        h1 { font-size: 3rem; margin-bottom: 10px; color: #fff; }
+        .subtitle { font-size: 1.2rem; color: #aaa; margin-bottom: 40px; }
+        
+        .card {
+            background: #212121;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+            border: 1px solid #333;
+            margin-bottom: 30px;
+        }
+        h2 { margin-top: 0; font-size: 1.8rem; }
+        p { line-height: 1.6; color: #ccc; font-size: 1.1rem; margin-bottom: 30px; }
+        
+        /* Stiluri pentru imagini */
+        .hero-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid #444;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+        }
+        .screenshots-grid {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .screenshots-grid img {
+            width: calc(50% - 7.5px);
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid #444;
+        }
+
+        /* Stiluri pentru butoane */
+        .buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+        a.btn { text-decoration: none; padding: 12px 24px; border-radius: 8px; font-weight: bold; transition: background 0.2s; }
+        .btn-primary { background: #3ea6ff; color: #0f0f0f; }
+        .btn-primary:hover { background: #65b8ff; }
+        .btn-secondary { background: #3d3d3d; color: #fff; }
+        .btn-secondary:hover { background: #4d4d4d; }
+        .btn-support { background: #FF5E5B; color: #fff; }
+        .btn-support:hover { background: #FF7A78; }
+        .footer { margin-top: 20px; color: #666; font-size: 0.9rem; }
+
+        /* Adaptare pentru telefoane mobile */
+        @media (max-width: 600px) {
+            .screenshots-grid { flex-direction: column; }
+            .screenshots-grid img { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Midn1ghtlab</h1>
+        <div class="subtitle">Creating tools for a better web experience.</div>
+        
+        <div class="card">
+            <h2>Old Layout for YouTube™</h2>
+            <p>Restore the classic YouTube watch layout by disabling the latest UI experiments. Fast, lightweight, and respects your privacy. No user data is collected.</p>
+            
+            <!-- Imaginea principală -->
+            <img src="assets/01_Classic_Watch_Page_1280x800.png" alt="Classic Watch Page" class="hero-image">            
+            <!-- Grila cu cele 2 imagini secundare -->
+            <div class="screenshots-grid">
+                <img src="assets/02_Before_After_1280x800.png" alt="Before and After Comparison">
+                <img src="assets/03_Simple_Controls_1280x800.png" alt="Simple Extension Controls">
+            </div>
+            
+            <div class="buttons">
+                <!-- Aici vei pune link-ul oficial din Web Store după publicare -->
+                <a href="#" class="btn btn-primary">Install from Web Store</a>
+                <a href="/issues" class="btn btn-secondary">Feedback & Bugs</a>
+                <a href="/support" class="btn btn-support">Support on Ko-fi</a>
+            </div>
+        </div>
+        
+        <div class="footer">
+            &copy; 2026 Midn1ghtlab. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
