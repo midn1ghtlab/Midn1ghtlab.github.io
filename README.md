@@ -9,7 +9,7 @@
 
 ## 🚀 Installation
 You can install the official extension directly from the Web Store:
-* **[Link to Chrome Web Store - Coming Soon]**
+* https://chromewebstore.google.com/detail/bpbhnliecejnhjkmeidbipmgpjegoamm
 
 *(For developers: You can also download the source code, extract the ZIP, and load it unpacked via `chrome://extensions` in Developer Mode).*
 
